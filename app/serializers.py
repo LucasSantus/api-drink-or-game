@@ -1,17 +1,17 @@
 from rest_framework import serializers
+from .models import Desafio, Regra_Casa
 
-from channels.models import Channel, Item
-
-class ChannelSerializer(serializers.ModelSerializer):
+class DesafioSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Channel
+        model = Desafio
         fields = [
-            "description",
-            "link",
-            "title",
+            "frase",
+            "nivel_desafios", 
         ]
 
-class ItemSerializer(serializers.ModelSerializer):
+class Regra_CasaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Item
-        exclude = ["channel"]
+        model = Regra_Casa
+        fields = [
+            "frase",
+        ]

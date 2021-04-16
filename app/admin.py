@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Channel, Item
+from .models import Desafio, Regra_Casa
 
-admin.site.register(Channel)
-admin.site.register(Item)
+admin.site.register(Desafio)
+admin.site.register(Regra_Casa)
